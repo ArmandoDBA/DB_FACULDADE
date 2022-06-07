@@ -8,7 +8,7 @@ CHANGE fk_cod_telefone fk_cod_telefone INT(4) NOT NULL;
 ALTER TABLE endereco
 CHANGE nome_rua nome_rua CHAR (50) NOT NULL,
 CHANGE numero_rua numer_rua INT(4) NOT NULL,
-CHANGE complemento complemento CHAR (20) NOT NULL,
+CHANGE complemento complemento CHAR (20) NULL,
 CHANGE CEP CEP CHAR(8) NOT NULL;
 
 ALTER TABLE aluno
