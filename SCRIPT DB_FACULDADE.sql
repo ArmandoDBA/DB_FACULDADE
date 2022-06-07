@@ -18,14 +18,14 @@ CREATE TABLE IF NOT EXISTS departamento (
 	cod_departamento INT(4) NOT NULL AUTO_INCREMENT,
     nome_departamento CHAR (20),
     PRIMARY KEY (cod_departamento)
-    ); 
+); 
  CREATE TABLE IF NOT EXISTS telefone (
 	cod_telefone INT(4) NOT NULL AUTO_INCREMENT,
     num_telefone CHAR (20),
     fk_cod_tipo_tel INT (4),
     PRIMARY KEY (cod_telefone),
     FOREIGN KEY (fk_cod_tipo_tel) REFERENCES tipo_telefone (cod_tipo_tel)
- );
+);
   CREATE TABLE IF NOT EXISTS telefone_aluno (
 	cod_tel_aluno INT (4) NOT NULL AUTO_INCREMENT,
     fk_RA INT (4),
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS departamento (
     PRIMARY KEY (cod_tel_aluno),
     FOREIGN KEY (fk_RA) REFERENCES aluno (RA),
     FOREIGN KEY (fk_cod_telefone) REFERENCES telefone (cod_telefone)
-  );
+);
   CREATE TABLE IF NOT EXISTS endereco (
 	cod_endereco INT (4) NOT NULL AUTO_INCREMENT,
     nome_rua CHAR (50),
@@ -89,7 +89,7 @@ CREATE TABLE IF NOT EXISTS disciplina (
     fk_cod_departamento INTEGER(4),
     PRIMARY KEY (cod_disciplina),
     FOREIGN KEY (fk_cod_departamento) REFERENCES departamento (cod_departamento)
-    );
+);
 CREATE TABLE IF NOT EXISTS aluno_disciplina (
 	fk_RA INT (4),
     fk_cod_disciplina INT (4),
