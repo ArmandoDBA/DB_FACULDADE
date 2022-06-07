@@ -4,4 +4,5 @@ git status >> disponivel para publicação.
 git add  nome  arquivo >> prepara para publicação.
 git commit -m "comentario" >> publica o arquivo preparado.
 
--- Alterar nomeclatura de master p/ main >> git branch -M "main"--
+git branch -M "main" >>Alterar nomeclatura de master p/ main.
+git push origin main >> enviar para o gitHub.
