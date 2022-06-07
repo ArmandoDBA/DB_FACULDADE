@@ -1,5 +1,5 @@
 ALTER TABLE departamento
-CHANGE nome_departamento nome_departamento INT (4) NOT NULL;
+CHANGE nome_departamento nome_departamento CHAR(20) NOT NULL;
 
 ALTER TABLE telefone_aluno
 CHANGE fk_RA fk_RA INT(4) NOT NULL,
