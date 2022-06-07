@@ -6,8 +6,8 @@ USE DB_faculdade;
 
 CREATE TABLE IF NOT EXISTS tipo_telefone (
 	cod_tipo_tel INT (4) NOT NULL AUTO_INCREMENT,
-    tipo_telefone CHAR (8),
-    PRIMARY KEY(cod_tipo_tel)
+	tipo_telefone CHAR (8),
+	PRIMARY KEY(cod_tipo_tel)
 );
 CREATE TABLE IF NOT EXISTS tipo_logradouro (
 	cod_tipo_logradouro INT (4) NOT NULL AUTO_INCREMENT,
@@ -18,9 +18,13 @@ CREATE TABLE IF NOT EXISTS departamento (
 	cod_departamento INT(4) NOT NULL AUTO_INCREMENT,
     nome_departamento CHAR (20),
     PRIMARY KEY (cod_departamento)
+<<<<<<< HEAD
 ); 
+=======
+); 
+>>>>>>> 9b7bedb714bd67417b97aba03e49ef4355f9b6b7
  CREATE TABLE IF NOT EXISTS telefone (
-	cod_telefone INT(4) NOT NULL AUTO_INCREMENT,
+cod_telefone INT(4) NOT NULL AUTO_INCREMENT,
     num_telefone CHAR (20),
     fk_cod_tipo_tel INT (4),
     PRIMARY KEY (cod_telefone),
